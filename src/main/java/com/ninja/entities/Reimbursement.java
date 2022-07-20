@@ -1,10 +1,10 @@
-package com.ninja;
+package com.ninja.entities;
 
 /**
  * Hello world!
  *
  */
-public class App 
+public class Reimbursement 
 {
     public static void main( String[] args )
     {
