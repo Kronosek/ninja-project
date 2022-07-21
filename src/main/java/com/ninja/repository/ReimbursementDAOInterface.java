@@ -1,10 +1,8 @@
-package com.ninja.repositories;
-
-import java.util.List;
+package com.ninja.repository;
 
 import com.ninja.entities.Reimbursement;
 
-public interface ReimbursementDAO {
+public interface ReimbursementDAOInterface {
     /*
      * this interface is where i will decleare the methods
      * that i need to test. all methods i create here will
@@ -15,14 +13,14 @@ public interface ReimbursementDAO {
      */
 
      //creates
-    Reimbursement createReimbursement();
+    Reimbursement createReimbursement(Reimbursement newReimbursement);
 
      //reads
-    List<Reimbursement> getAllRequests();
+    // List<Reimbursement> getAllRequests();
 
-     //updates
-    Reimbursement updateReimbursement();
+    //  //updates
+    // Reimbursement updateReimbursement();
 
-     //deletes
-     boolean bool();
+    //  //deletes
+    // boolean bool();
 }

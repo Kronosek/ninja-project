@@ -10,10 +10,10 @@
         <!-- replace this with your AWS link as well as whatever database you have set up:-->
         <!-- preface our AWS link with "jdbc:postgresql://"-->
         <!-- at the end of our link we specify the database, in this case pets2-->
-        <property name="connection.url">jdbc:postgresql://employee-reinbursement.civu0ykq2gqq.us-east-2.rds.amazonaws.com/postgres</property>
+        <property name="connection.url">jdbc:postgresql://revature.cxjg1r4jsb2i.us-east-1.rds.amazonaws.com/test</property>
         <!-- replace credentials: -->
-        <property name="connection.username">postgress</property>
-        <property name="connection.password">Samsung22</property>
+        <property name="connection.username">Keam</property>
+        <property name="connection.password">MasterPa$$!</property>
         <!-- Keep the dialect the same because we're using postgres-->
         <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
         <!-- if we make changes to our java code, our database will automatically update-->
@@ -21,7 +21,6 @@
         <!-- this means that any SQL commands that are run will be displayed on the terminal: -->
         <property name="show_sql">true</property>
         <!-- Object Reational Mapping, we're mapping our Pet class (that we have yet to create) to a table in our database-->
-        <mapping class="com.ninja.entities.AAA"/>
         <mapping class="com.ninja.entities.Reimbursement"/>
     </session-factory>
 </hibernate-configuration>
