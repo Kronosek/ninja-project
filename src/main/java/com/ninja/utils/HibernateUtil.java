@@ -30,12 +30,12 @@ public class HibernateUtil {
                  
     }
 
-    private static void beginTransaction(){
+    public static void beginTransaction(){
         session = getSessionFactory().openSession();
         transaction = session.beginTransaction();
     }
 
-    private static void endTransaction(){
+    public static void endTransaction(){
         transaction.commit();
         session.close();
     }
