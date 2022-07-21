@@ -1,5 +1,7 @@
 package com.ninja.repository;
 
+import java.util.List;
+
 import com.ninja.entities.Reimbursement;
 
 public interface ReimbursementDAOInterface {
@@ -16,7 +18,7 @@ public interface ReimbursementDAOInterface {
     Reimbursement createReimbursement(Reimbursement newReimbursement);
 
      //reads
-    //List<Reimbursement> getAllRequests();
+    List <Reimbursement> getAllRequests();
 
     //  //updates
     // Reimbursement updateReimbursement();

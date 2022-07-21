@@ -1,5 +1,7 @@
 package com.ninja.repository;
 
+import java.util.List;
+
 import com.ninja.entities.Reimbursement;
 import com.ninja.utils.HibernateUtil;
 
@@ -11,6 +13,14 @@ public class ReimbursementDAO implements ReimbursementDAOInterface{
         HibernateUtil.getSession().save(newReimbursement);
         HibernateUtil.endTransaction();
         return newReimbursement;
+    }
+
+    @Override
+    public List<Reimbursement> getAllRequests(){
+        HibernateUtil.beginTransaction();
+        List<Reimbursement> request = HibernateUtil.getSession().createQuery("from Reimbursement", Reimbursement.class).getResultList();
+        return request;
+        
     }
 
     // @Override
